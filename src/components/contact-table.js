@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { Segment, Table, Button, Icon } from "semantic-ui-react";
 import { ContactContext } from "../contexts/contact-context";
 
-export default function ContactTable() {
+const ContactTable = () => {
   // Subscribe to `contacts` state and access dispatch function
   const [state, dispatch] = useContext(ContactContext);
   // Declare a local state to be used internally by this component
@@ -64,4 +64,6 @@ export default function ContactTable() {
       </Table>
     </Segment>
   );
-}
+};
+
+export default ContactTable;

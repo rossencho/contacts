@@ -4,7 +4,7 @@ import ContactForm from "./components/contact-form";
 import ContactTable from "./components/contact-table";
 import { ContactContextProvider } from "./contexts/contact-context";
 
-export default function ContactView() {
+const ContactView = () => {
   return (
     <ContactContextProvider>
       <Segment basic>
@@ -14,4 +14,6 @@ export default function ContactView() {
       </Segment>
     </ContactContextProvider>
   );
-}
+};
+
+export default ContactView;
